@@ -15,17 +15,20 @@ double Function::f(double x)
   return 0.2 + 25 * x - 200 * pow(x, 2) + 675 * pow(x, 3) - 900 * pow(x, 4) + 400 * pow(x, 5);
 }
 
-double Function::hermiteType(double x){
+double Function::hermiteType(double x)
+{
   // (e^(-x²))*f(x)
   return pow(exp(1.0), pow(-x, 2));
 }
 
-double Function::laguerreType(double x){
+double Function::laguerreType(double x)
+{
   // (e^(-x))*f(x)
   return pow(exp(1.0), -x);
 }
 
-double Function::chebyshevType(double x){
+double Function::chebyshevType(double x)
+{
   // f(x)/((1-x²)^1/2), with f(x) = x²
   return pow(x, 2)/sqrt(1 - pow(x, 2));
 }
