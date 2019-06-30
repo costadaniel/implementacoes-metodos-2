@@ -29,3 +29,5 @@ int main(int argc, char const *argv[])
 
   return 0;
 }
+
+// g++ Function.cpp GaussChebyshev.cpp GaussHermite.cpp GaussLaguerre.cpp GaussLegendre.cpp NewtonCotes.cpp main.cpp -o main.o

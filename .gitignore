@@ -1,3 +1,4 @@
 *.o
 *.pdf
 /.vscode
+__pycache__
