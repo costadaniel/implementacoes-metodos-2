@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <cmath>
 
-// #define _USE_MATH_DEFINES
+#define _USE_MATH_DEFINES
 
 using namespace std;
 
@@ -13,16 +13,14 @@ double GaussChebyshev::gaussChebyshevNPoints(Function function, int N){
   double result = 0;
   double x;
   double weight = M_PI / N;
-  double aux;
+  double value;
 
   // Sum Loop
   for (int i = 1; i <= N; i++) {
-    aux = (2*i - 1)/(2*N);
-    x = cos((aux)*M_PI);
-    cout << aux << endl;
+    value = (2.0*i - 1.0)/(2.0*N);
+    x = cos((value)*M_PI);
 
     result += function.chebyshevType(x)*weight;
-
   }
 
   return result;

@@ -7,7 +7,7 @@ methods = Methods()
 matricula_franklyn = '397847'
 matricula_daniel = '374169'
 
-A, B, C, D, E, F = map(int, list(matricula_franklyn))
+A, B, C, D, E, F = map(int, list(matricula_daniel))
 
 M = [[30+A+F, A, B, C, D],
      [A, 10+B+E, E, F, A+B],
@@ -20,4 +20,6 @@ V = [[1], [1], [1], [1], [1]]
 N = [[1, 3, -1], [3, 2, 4], [-1, 4, 10]]
 e = 0.000001
 
-methods.power_method(M, V, e)
+# methods.power_method(M, V, e)
+
+print(M)

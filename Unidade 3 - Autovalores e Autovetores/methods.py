@@ -24,3 +24,4 @@ class Methods:
         return max(a_xnew)[0]
 
     def inverse_power_method(self, given_matrix, given_vector, given_error):
+        pass
